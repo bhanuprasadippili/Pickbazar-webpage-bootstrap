@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>PickBazar</title>
+    <style>
+        p:hover {
+            color: rgb(12, 166, 12);
+        }
+        #back {
+        background-image: url(../pickbazar/grocery.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        input::placeholder {
+            color: rgb(23, 203, 149);
+        }
+
+        .card-header:hover
+        {
+            transform: translateY(-.2rem);
+            transition: 1s;
+        }
+
+        .col button:hover
+        {
+            background-color: rgba(0, 128, 102, 0.626);
+            color: white;
+        }
+
+        .btn:active
+        {
+            color: green;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-light d-flex justify-content-between align-items-center p-2" style="position: fixed; z-index: 1;">
+        <div class="d-flex gap-3">
+        <img class="p-3" width="25%" src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F860%2FPickBazar.png&w=1920&q=75" alt="">
+
+        
+            <div class="btn btn-white btn-outline-success dropdown-toggle p-2 mt-2" data-bs-toggle="dropdown">Grocery</div>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="./pickbazar.html">Grocery</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_bakery.html">Bakery</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_makeup.html">Makeup</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_bags.html">Bags</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_clothing.html">Clothing</a></div>
+                <div class="dropdown-item">Furniture</div>
+                <div class="dropdown-item">Daily Needs</div>
+                <div class="dropdown-item">Books</div>
+                </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+            <div class="d-flex gap-5 align-items-center mt-3">
+            <p>shops</p>
+            <p>Offers</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+            </div>
+
+            <button type="button" class="btn-success btn-outline-info text-white" style="border: none;">Become a Seller</button>
+            <button type="button" class="btn-success btn-outline-info text-white" style="border: none;">Join</button>
+        </div>
+
+    </div>
+
+
+    <div id="back" class="d-flex flex-column justify-content-center align-items-center gap-3" style="width: 100%; height: 100vh;">
+
+        
+    <div style="display: flex; position: fixed; z-index: 1; right: 0; top: 40%; flex-direction: column; gap: .5rem; width: 7%; background-color: rgba(0, 128, 102, 0.785); color: white; padding: .8rem; border-radius: .5rem 0 0 .5rem; height: 5rem;">
+        <span><ion-icon name="bag-check"></ion-icon> 0 item</span>
+        <button class="text-success" style="width: 3.5rem; border-radius: .3rem; border: none;">$0.00</button>
+    </div>
+
+        <h1>Groceries Delivered in 90 Minutes</h1>
+        <p>Get your healthy foods & snacks delivered at your doorsteps all day everyday</p>
+        <div class="d-flex justify-content-center" style="width: 100%;"><input class="p-2 bg-white" style="width: 38%; border: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" type="text" placeholder="Search your products from here"><button class="d-flex align-items-center text-white gap-2 p-2 btn-success" style="width: 8%; border: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"><ion-icon style="font-size: 1.4rem; font-weight: bold;" name="search"></ion-icon>Search</button></div>
+    </div>
+
+    <div class="container-fluid d-flex my-5 px-4 gap-4">
+        <div>
+            <img class="img-fluid"  src="../pickbazar/image1.webp" alt="">
+        </div>
+        <div>
+            <img class="img-fluid" src="../pickbazar/image2.webp" alt="">
+        </div>
+        <div>
+            <img class="img-fluid" src="../pickbazar/image3.webp" alt="">
+        </div>
+    </div>
+
+    
+
+
+    <div class="container-fluid d-flex">
+    <div class="container" style="width: 15%; display: flex; flex-direction: column; gap: .4rem; padding: 1rem; border-top: .5px solid rgba(128, 128, 128, 0.582);">
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Fruits & Vegetables</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Fruits</div>
+            <div class="dropdown-item">Vegetables</div>
+        </div>
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Meat & Fish</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Fresh Fish</div>
+            <div class="dropdown-item">Meat</div>
+        </div>
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Snacks</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Nuts & Biscuits</div>
+            <div class="dropdown-item">Chocolates</div>
+            <div class="dropdown-item">Crisps</div>
+            <div class="dropdown-item">Noodles & Pasta</div>
+            <div class="dropdowm-item">Sauce</div>
+            <div class="dropdown-item">Soup</div>
+        </div>
+
+
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Pet Care</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Cat Food</div>
+            <div class="dropdown-item">Dog Food</div>
+            <div class="dropdown-item">Accessories</div>
+        </div>
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Home & Cleaning</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Air Freshner</div>
+            <div class="dropdown-item">Cleaning Products</div>
+            <div class="dropdown-item">Kitchen Accessories</div>
+            <div class="dropdown-item">Laundry</div>
+        </div>
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Dairy</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Milk</div>
+            <div class="dropdown-item">Butter</div>
+            <div class="dropdown-item">Egg</div>
+            <div class="dropdown-item">Yogurt</div>
+        </div>
+
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Cooking</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Oil</div>
+            <div class="dropdown-item">Rice</div>
+            <div class="dropdown-item">Salt & Sugar</div>
+            <div class="dropdown-item">Spices</div>
+        </div>
+
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Breakfast</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Bread</div>
+            <div class="dropdown-item">Cereal</div>
+            <div class="dropdown-item">Jam</div>
+        </div>
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Beverage</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Coffee</div>
+            <div class="dropdown-item">Energy Drinks</div>
+            <div class="dropdown-item">Juice</div>
+            <div class="dropdown-item">Fizzy Drinks</div>
+            <div class="dropdowm-item">Tea</div>
+        </div>
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Health & Beauty</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Bath</div>
+            <div class="dropdown-item">Cream</div>
+            <div class="dropdown-item">Deodorant</div>
+            <div class="dropdown-item">Face Care</div>
+            <div class="dropdowm-item">Oral Care</div>
+            <div class="dropdown-item">Shaving Needs</div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid" style="width: 85%; row-gap: .5rem; display: grid; background-color: rgba(128, 128, 128, 0.249); padding: 1.5rem;">
+
+    <div class="row" style="column-gap: .1rem;">
+        <div class="col" style="width: 14rem;">
+            <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+                <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F1%2FApples.jpg&w=1920&q=75" alt="">
+
+                <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+                    <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;"> $2.00</span></h1>
+                    <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Apples</p>
+                    <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                    Add
+                    <button class="over" style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+                </button>
+            </div>
+        </div>
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2%2FBabySpinach.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$0.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Baby Spinach</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F3%2Fblueberries.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: 1rem; font-size: 1rem;">$3.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> </span></h1>
+            <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Blueberries</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F4%2FBrusselsSprouts.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .58rem; font-size: 1rem;">$3.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;  text-decoration: line-through;">$5.00</span></h1>
+            <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Brussels Sprout</p>
+            <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+            Add
+            <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F6%2Fclementines.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$3.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Clementines</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row" style="column-gap: .1rem;">
+   
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F7%2FCorn.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$4.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$5.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Sweet Corn</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F8%2FCucumber.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> </span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Cucumber</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F10%2FDates.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$8.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$10.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Dates</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F11%2FFrenchGreenBeans.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.20
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;  text-decoration: line-through; text-decoration: line-through;">$1.50</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">French Green Beans</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F12%2FGreenBeans.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$4.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$5.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Green Beans</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+
+   <div class="row" style="column-gap: .5rem;">
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F13%2FGreenLimes.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Lime</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F14%2FMangoes.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Mango</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F15%2FMiniPeppers.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$5.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$6.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Pepper</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F16%2Fpears.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$3.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$4.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Pears</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F17%2FPeeled-Carrots.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.20
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Peeled Baby Carrot</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="row" style="column-gap: .1rem;">
+   
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F18%2FRedCherries.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.80
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Cherry</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F19%2Fstrawberry.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$8.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$10.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Strawberry
+
+                </p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F20%2FVeggiePlatter.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$3.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$4.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Mix Vegetable Platter</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F21%2FYellow-Limes.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem; text-decoration: line-through;">$2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Lemon</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F4%2FBrusselsSprouts.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .58rem; font-size: 1rem;">$3.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;  text-decoration: line-through;">$5.00</span></h1>
+            <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Brussels Sprout</p>
+            <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+            Add
+            <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="d-flex justify-content-center"><div class=" h3 btn btn-success my-3" style="width: 10%;">Load More</div></div>
+
+    </div>
+
+</div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

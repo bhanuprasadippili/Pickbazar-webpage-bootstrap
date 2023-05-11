@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+
+    p:hover {
+            color: rgb(12, 166, 12);
+    }
+
+    #back {
+        background-image: url(../pickbazar/makeup.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    input::placeholder {
+        color: rgb(23, 203, 149);
+    }
+
+    .card-header:hover
+    {
+        transform: translateY(-.2rem);
+        transition: 1s;
+    }
+
+    .col button:hover
+    {
+        background-color: rgba(0, 128, 102, 0.626);
+        color: white;
+    }
+
+
+    .btn:active
+    {
+        color: green !important;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+</style>
+
+
+
+</head>
+<body>
+
+
+    <div class="container-fluid bg-light d-flex justify-content-between align-items-center p-2" style="position: fixed; z-index: 1;">
+        <div class="d-flex gap-3">
+        <img class="p-3" width="25%" src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F860%2FPickBazar.png&w=1920&q=75" alt="">
+
+        
+            <div class="btn btn-white btn-outline-success dropdown-toggle p-2 mt-2" data-bs-toggle="dropdown">Grocery</div>
+            <div class="dropdown-menu">
+                <div class="dropdown-item"><a href="./pickbazar.html">Grocery</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_bakery.html">Bakery</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_makeup.html">Makeup</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_bags.html">Bags</a></div>
+                <div class="dropdown-item"><a href="./pickbazar_clothing.html">Clothing</a></div>
+                <div class="dropdown-item">Furniture</div>
+                <div class="dropdown-item">Daily Needs</div>
+                <div class="dropdown-item">Books</div>
+                </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+            <div class="d-flex gap-5 align-items-center mt-3">
+            <p>shops</p>
+            <p>Offers</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+            </div>
+
+            <button type="button" class="btn-success btn-outline-info text-white" style="border: none;">Become a Seller</button>
+            <button type="button" class="btn-success btn-outline-info text-white" style="border: none;">Join</button>
+        </div>
+
+    </div>
+
+
+    <div id="back" class="d-flex flex-column justify-content-center align-items-center gap-3" style="width: 100%; height: 100vh;">
+
+        
+    <div style="display: flex; position: fixed; z-index: 1; right: 0; top: 40%; flex-direction: column; gap: .5rem; width: 7%; background-color: rgba(0, 128, 102, 0.785); color: white; padding: .8rem; border-radius: .5rem 0 0 .5rem; height: 5rem;">
+        <span><ion-icon name="bag-check"></ion-icon> 0 item</span>
+        <button class="text-success" style="width: 3.5rem; border-radius: .3rem; border: none;">$0.00</button>
+    </div>
+
+        <h1 style="font-size: 3rem;">Branded & imported makeups</h1>
+        <p>Easiest and cheapest way to get your branded & imported makeups</p>
+        <div class="d-flex justify-content-center" style="width: 100%;"><input class="p-2 bg-white" style="width: 38%; border: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" type="text" placeholder="Search your products from here"><button class="d-flex align-items-center text-white gap-2 p-2 btn-success" style="width: 8%; border: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"><ion-icon style="font-size: 1.4rem; font-weight: bold;" name="search"></ion-icon>Search</button></div>
+    </div>
+
+
+    <div class="container-fluid d-flex my-5 px-4 gap-4">
+        <div>
+            <img class="img-fluid"  src="../pickbazar/image1.webp" alt="">
+        </div>
+        <div>
+            <img class="img-fluid" src="../pickbazar/image2.webp" alt="">
+        </div>
+        <div>
+            <img class="img-fluid" src="../pickbazar/image3.webp" alt="">
+        </div>
+    </div>
+
+
+<div class="container-fluid d-flex">
+    <div class="container" style="width: 15%; display: flex; flex-direction: column; gap: .4rem; padding: 1rem; border-top: .5px solid rgba(128, 128, 128, 0.582);">
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Face</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Blusher</div>
+            <div class="dropdown-item">Foundation</div>
+        </div>
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Eyes</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Eye Shadow</div>
+            <div class="dropdown-item">Glitter</div>
+        </div>
+
+
+
+        <div class="btn dropdown-toggle" data-bs-toggle="dropdown" style="text-align: start;">Lips</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-item">Lip Gloss</div>
+            <div class="dropdown-item">Lip Stick</div>
+            <div class="dropdown-item">Lip Kit</div>
+          
+        </div>
+
+
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Accessories</h6>
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Shaving Needs</h6>
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Oral Care</h6>
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Facial Care</h6>
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Deodorant</h6>
+<h6 style="font-size: .8rem; color: rgba(0, 0, 0, 0.58); margin-left: .8rem;">Bath & Oil</h6>
+
+
+
+    </div>
+
+    <div class="container-fluid" style="width: 85%; row-gap: .5rem; display: grid; background-color: rgba(128, 128, 128, 0.249); padding: 1.5rem;">
+
+<div class="row" style="column-gap: .1rem;">
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F28%2FToo_Faced.jpg&w=1920&q=75" alt="">
+
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Bourjois Little Round Pot Blusher</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button class="over" style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F29%2Fbeauty.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$0.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Cyo Crush On Blush Powder Blush</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F30%2FDrHauschka_CompactPowder.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: 1rem; font-size: 1rem;">$3.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> </span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Smashbox The Cali Contour Palette</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F31%2Fg9.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .58rem; font-size: 1rem;">$3.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $5.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Dior Backstage Contour Palette</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F32%2FIman.jpeg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $3.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Clarins Everlasting Compact Foundatio</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row" style="column-gap: .1rem;">
+   
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F44%2FMax_factor.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$4.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $5.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Ex1 Invisiwear Liquid Foundation</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F37%2Felf.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> </span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Too Faced Born This Way Loose Setti</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F38%2Floreal_24hr.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$8.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $10.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Beauty Pressed Finishing Powder</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F95%2Fface_republic_Sun_gel.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.20
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $1.50</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Dr. Hauschka Compact Powder</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F72%2Fdsl.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$4.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $5.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Pupa Natural Side Compact Powder</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="row" style="column-gap: .5rem;">
+   
+
+   
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F67%2FLIPTENSITY.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Loreal Infallible Pro-Glow Foundation</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F68%2FBLING.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.50
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Loreal Infallible 24H Fresh Wear Found</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F68%2FBLING.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$5.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $6.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Max Factor Wild Eyeshadow Pot</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F78%2Fgosh_lip_gloss.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$3.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $4.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Fenty Beauty Moroccan Spice Eyeshadow </p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F79%2Frevlon_the_gloss.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$2.20
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Stila Magnificent Metals Glitter Glo</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="row" style="column-gap: .1rem;">
+   
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F84%2FSpectrum.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.80
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Skinnydip Party Glitter Mirror Brush</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F22%2FBourjois.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$8.00
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $10.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Too Faced Born This Way Loose Setting</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F99%2Fattitude_night_bubble_bath.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$3.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $4.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Beauty Pressed Finishing Powder</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F102%2Feo_body_lotion.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"> $2.00</span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Bourjois Little Round Pot Blusher</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+    <div class="col" style="width: 14rem;">
+        <div class="card-header" style="width: 14.5rem; background-color: white; padding: .5rem;">
+            <img class="img-fluid" src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F67%2FLIPTENSITY.jpg&w=1920&q=75" alt="">
+            <h1 style="margin-left: .5rem; font-size: 1rem;">$1.60
+               <span style="color: rgba(0, 0, 0, 0.365); font-size: .8rem;"></span></h1>
+               <p style="margin-left: .5rem; color: rgba(0, 0, 0, 0.365);">Smashbox The Cali Contour Palette</p>
+               <button class="my-3" style="width: 75%; margin-left: .5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.091);">
+                Add
+                <button style=" width:2.5rem; padding: .4rem; border: none; background-color: rgba(128, 128, 128, 0.249);"><ion-icon name="add-sharp"></ion-icon></button>
+               </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="d-flex justify-content-center"><div class=" h3 btn btn-success my-3" style="width: 10%;">Load More</div></div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
